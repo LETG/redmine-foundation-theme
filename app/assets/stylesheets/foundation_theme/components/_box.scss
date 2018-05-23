@@ -1,0 +1,39 @@
+.controller-projects {
+  .project-box {
+    padding: 0 0 10px 0;
+    margin-bottom: 20px;
+    &.members {
+      h3 {
+        background: image_url("icons/users.png") 10px 42% no-repeat $secondary-color;
+        padding-left: 34px;
+      }
+    }
+    &.news {
+      h3 {
+        background: image_url("icons/newspaper.png") 10px 50% no-repeat $secondary-color;
+        padding-left: 34px;
+      }
+    }
+    h3 {
+      background: none;
+      margin-top: 0;
+      margin-bottom: 10px;
+      padding: 8px 14px;
+      color: #FFF;
+      background-color: $secondary-color;
+    }
+    p {
+      padding: 0 14px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.projects.box {
+  ul > li {
+    margin-bottom: rem-calc(13px);
+    line-height: rem-calc(24px);
+  }
+}

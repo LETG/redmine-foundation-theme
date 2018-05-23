@@ -1,11 +1,16 @@
-$topbar-height: 45px;
-$sidebar-width: 240px;
+@import "../vendor/foundation/functions";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 
-$primary-color: #2980b9;
-$secondary-color: #348ec9;
+$topbar-height: rem-calc(60);
+$sidebar-width: rem-calc(240);
 
-$first-grey: #32323A;
-$secondary-grey: #202025;
+$primary-color: #17C4BB;
+$secondary-color: #54778e;
+
+$topbar-link-color: darken($secondary-color, 10);
+
+$first-grey: #263447;
+$secondary-grey: #1f2b3d;
 $third-grey: #F4F4F4;
 
 $alert-color: #f04124;
@@ -13,4 +18,4 @@ $success-color: #43AC6A;
 $warning-color: #f08a24;
 $info-color: #a0d3e8;
 
-$body-font-family: Arial, "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-family: "Open Sans", sans-serif;

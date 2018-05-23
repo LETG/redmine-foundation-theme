@@ -5,12 +5,19 @@ body {
 }
 
 #content {
+  position: relative;
   margin-top: $topbar-height;
   margin-left: $sidebar-width;
-  padding: 25px;
+  padding: rem-calc(25px);
   width: auto;
   border: 0;
   &.merge-left {
     margin-left: 0;
+  }
+}
+
+.controller-projects.action-show {
+  #content {
+    padding-top: rem-calc(75px);
   }
 }

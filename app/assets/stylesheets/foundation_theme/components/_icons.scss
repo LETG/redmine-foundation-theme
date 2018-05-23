@@ -80,9 +80,9 @@ div.projects h3 {
 }
 
 .icon-lock {
-  background: image-url("lock-2.png") no-repeat  10px 6px #2980b9;
+  background: image-url("lock-2.png") no-repeat  10px 6px $primary-color;
   &:hover {
-    background: image-url("lock-2.png") no-repeat  10px 6px #348ec9;
+    background: image-url("lock-2.png") no-repeat  10px 6px darken($primary-color, 10);
   }
   &:before {
     content: none !important;
@@ -90,9 +90,9 @@ div.projects h3 {
 }
 
 .icon-unlock {
-  background: image-url("unlock-2.png") no-repeat  10px 6px #2980b9;
+  background: image-url("unlock-2.png") no-repeat  10px 6px $primary-color;
   &:hover {
-    background: image-url("unlock-2.png") no-repeat  10px 6px #348ec9;
+    background: image-url("unlock-2.png") no-repeat  10px 6px darken($primary-color, 10);
   }
   &:before {
     content: none !important;
@@ -104,9 +104,9 @@ div.projects h3 {
 // }
 
 .icon-checked {
-  background: image-url("check-2.png") no-repeat  10px 6px #2980b9;
+  background: image-url("check-2.png") no-repeat  10px 6px $primary-color;
   &:hover {
-    background: image-url("check-2.png") no-repeat  10px 6px #348ec9;
+    background: image-url("check-2.png") no-repeat  10px 6px darken($primary-color, 10);
   }
 }
 
@@ -115,23 +115,23 @@ div.projects h3 {
 }
 
 .icon-add {
-  background: image-url("add-2.png") no-repeat  10px 6px #2980b9;
+  background: image-url("add-2.png") no-repeat  10px 6px $primary-color;
   &:hover {
-    background: image-url("add-2.png") no-repeat  10px 6px #348ec9;
+    background: image-url("add-2.png") no-repeat  10px 6px darken($primary-color, 10);
   }
 }
 
 .icon-reload {
-  background: image-url("reaload-2.png") no-repeat  10px 6px #2980b9;
+  background: image-url("reaload-2.png") no-repeat  10px 6px $primary-color;
   &:hover {
-    background: image-url("reaload-2.png") no-repeat  10px 6px #348ec9;
+    background: image-url("reaload-2.png") no-repeat  10px 6px darken($primary-color, 10);
   }
 }
 
 .icon-save {
-  background: image-url("save-2.png") no-repeat  10px 6px #2980b9;
+  background: image-url("save-2.png") no-repeat  10px 6px $primary-color;
   &:hover {
-    background: image-url("save-2.png") no-repeat  10px 6px #348ec9;
+    background: image-url("save-2.png") no-repeat  10px 6px darken($primary-color, 10);
   }
 }
 

@@ -1,0 +1,72 @@
+.project-main-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: {
+    left: rem-calc(25px);
+    top: rem-calc(15px);
+    bottom: rem-calc(15px);
+    right: rem-calc(25px);
+  }
+  width: 100%;
+  background-color: $secondary-color;
+  color: white;
+  line-height: rem-calc(35px);
+  select {
+    margin: 0;
+    &:hover {
+      background-color: white;
+    }
+  }
+  a, a:hover {
+    color: $primary-color;
+  }
+}
+
+#projects-index {
+  a, a:link {
+    color: #415c6e;
+    &.closed {
+      color: #999;
+    }
+  }
+  ul.projects {
+    li.root {
+      margin-bottom: 1em;
+      background-color: #efefef;
+      margin-bottom: 14px;
+      border-top: 1px solid #efefef;
+      border-left: 1px solid #efefef;
+      border-right: 1px solid #efefef;
+      border-bottom: 2px solid #eee;
+      div.root {
+        padding: 14px 14px 18px;
+        > a { font-weight: bold; }
+      }
+    }
+    li.child {
+      margin-top: 0px;
+      > .child {
+        padding: 10px 0;
+      }
+    }
+    ul.projects {
+      padding-left: 2em;
+      border-left: 5px solid #e0e0e0;
+      background: #F9F9F9;
+      padding-bottom: 5px;
+    }
+  }
+  .wiki.description {
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  .project-details {
+    font-size: 13px;
+    color: #696969;
+    margin: 2px 0 9px;
+    a:link {
+      color: #707070 !important;
+    }
+  }
+}

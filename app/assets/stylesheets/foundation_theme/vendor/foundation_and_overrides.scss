@@ -6,7 +6,6 @@
 // $rem-base: 16px;
 
 // Allows the use of rem-calc() or lower-bound() in your settings
-@import "foundation/functions";
 
 // $experimental: true;
 
@@ -912,7 +911,7 @@
 // $switch-negative-color: #f5f5f5;
 
 // Outline Style for tabbing through switches
-// $switch-label-outline: 1px dotted #888;
+// $switch-label-outline: 1px dotted $topbar-link-color;
 
 // Tables
 
@@ -1013,8 +1012,13 @@
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: #333;
+$topbar-bg-color: white;
 // $topbar-bg: $topbar-bg-color;
+$topbar-link-bg: transparent;
+$topbar-link-bg-hover: transparent;
+$topbar-link-bg-color-hover: transparent;
+$topbar-link-bg-active: transparent;
+$topbar-link-bg-active-hover: transparent;
 
 // Height and margin
 // $topbar-height: 45px;
@@ -1025,18 +1029,18 @@
 // $topbar-title-font-size: rem-calc(17);
 
 // Style the top bar dropdown elements
-// $topbar-dropdown-bg: #333;
-// $topbar-dropdown-link-color: #fff;
-// $topbar-dropdown-link-bg: #333;
+$topbar-dropdown-bg: white;
+$topbar-dropdown-link-color: $topbar-link-color;
+$topbar-dropdown-link-bg: white;
+$topbar-dropdown-link-color-hover: white;
 // $topbar-dropdown-link-weight: normal;
 // $topbar-dropdown-toggle-size: 5px;
-// $topbar-dropdown-toggle-color: #fff;
+$topbar-dropdown-toggle-color: $topbar-link-color;
 // $topbar-dropdown-toggle-alpha: 0.4;
 
 // Set the link colors and styles for top-level nav
-// $topbar-link-color: #fff;
-// $topbar-link-color-hover: #fff;
-// $topbar-link-color-active: #fff;
+$topbar-link-color-hover: $topbar-link-color;
+$topbar-link-color-active: $topbar-link-color;
 // $topbar-link-weight: normal;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
@@ -1057,10 +1061,10 @@
 // $topbar-menu-link-transform: uppercase;
 // $topbar-menu-link-font-size: rem-calc(13);
 // $topbar-menu-link-weight: bold;
-// $topbar-menu-link-color: #fff;
+$topbar-menu-link-color: $topbar-link-color;
 // $topbar-menu-icon-color: #fff;
-// $topbar-menu-link-color-toggled: #888;
-// $topbar-menu-icon-color-toggled: #888;
+// $topbar-menu-link-color-toggled: $topbar-link-color;
+// $topbar-menu-icon-color-toggled: $topbar-link-color;
 
 // Transitions and breakpoint styles
 // $topbar-transition-speed: 300ms;

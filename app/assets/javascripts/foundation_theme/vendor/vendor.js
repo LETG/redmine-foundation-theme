@@ -1,12 +1,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery-ui
+//= require jquery-ui/datepicker-fr
 
 //= require ./modernizr
 // require ./foundation.min
 //= require select2
 //= require select2_locale_fr
-//= require foundation
+// require foundation
 
 // require timelineJS/embed
 // require timelineJS/locale/fr

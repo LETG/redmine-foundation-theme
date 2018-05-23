@@ -8,7 +8,7 @@ a {
 	font-family: $body-font-family !important;
 	color: $primary-color;
 	&:hover {
-		color: $secondary-color !important;
+		color: $secondary-color;
 		font-family: $body-font-family;
 	}
 	.icon.icon-del {

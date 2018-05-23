@@ -1,22 +1,63 @@
 .top-bar.fixed-top {
   position: fixed;
   top: 0;
-  z-index: 10001;
+  z-index: 9999;
   width: 100%;
-  background-color: $first-grey;
+  height: $topbar-height;
+  box-shadow: 0 1px 10px 0 rgba(50,50,50,.2);
 }
 
 .top-bar .title-area {
   width: 240px;
-  background: $primary-color !important;
-  li > h1 > a {
-	color: #FFF !important;
-    background: $primary-color !important;
+  background: $primary-color;
+  .name {
+    height: $topbar-height;
+  }
+  li:not(.has-form) > h1 > a:not(.button) {
+    color: #FFF;
+    background: $primary-color;
+    height: $topbar-height;
+    font-size: 1.2625rem;
+    font-weight: bold;
+    letter-spacing: 2px;
   }
 }
 
 .top-bar-section {
-	a {
-		color: #FFF !important;
-	}
+  li:not(.has-form) a:not(.button) {
+    line-height: 60px;
+    font-size: 0.95rem;
+  }
+  .has-dropdown > a:after {
+    top: 29.5px;
+  }
+}
+
+.jumpbox-container {
+  display: none;
+  width: 300px;
+  margin: 17px 40px 0 0;
+  @media only screen and (min-width: rem-calc(1300px)) {
+    display: block;
+  }
+  a.select2-choice {
+    background: white;
+    span {
+      line-height: 23px;
+    }
+  }
+  .select2-container {
+    width: 330px !important;
+  }
+}
+
+.select2-drop {
+  top: -17px !important;
+  padding-top: 10px;
+}
+
+@media only screen and (min-width: 40.0625em) {
+ .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
+   background: $primary-color;
+  }
 }
