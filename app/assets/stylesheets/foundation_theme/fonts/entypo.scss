@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'entypo';
-  src: asset-url('entypo/entypo.eot?78512302', font);
-  src: asset-url('entypo/entypo.eot?78512302#iefix', font) format('embedded-opentype'),
-       asset-url('entypo/entypo.woff?78512302', font) format('woff'),
-       asset-url('entypo/entypo.ttf?78512302', font) format('truetype'),
-       asset-url('entypo/entypo.svg?78512302#entypo', font) format('svg');
+  src: asset-url('entypo/entypo.eot?78512302');
+  src: asset-url('entypo/entypo.eot?78512302#iefix') format('embedded-opentype'),
+       asset-url('entypo/entypo.woff?78512302') format('woff'),
+       asset-url('entypo/entypo.ttf?78512302') format('truetype'),
+       asset-url('entypo/entypo.svg?78512302#entypo') format('svg');
   font-weight: normal;
   font-style: normal;
 }

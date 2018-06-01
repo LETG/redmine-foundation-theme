@@ -31,4 +31,29 @@ ApplicationHelper.class_eval do
             ]
     tabs.select {|tab| User.current.allowed_to?(tab[:action], @project)}
   end
+
+  def page_header_title
+    if @project.nil? || @project.new_record?
+      h(Setting.app_title)
+    else
+      b = []
+      ancestors = (@project.root? ? [] : @project.ancestors.visible.to_a)
+      if ancestors.any?
+        root = ancestors.shift
+        b << link_to_project(root, {:jump => current_menu_item}, :class => 'root')
+        if ancestors.size > 2
+          b << "\xe2\x80\xa6"
+          ancestors = ancestors[-2, 2]
+        end
+        b += ancestors.collect {|p| link_to_project(p, {:jump => current_menu_item}, :class => 'ancestor') }
+      end
+      b << content_tag(:span, h(@project), class: 'current-project')
+      if b.size > 1
+        separator = content_tag(:span, ' &raquo; '.html_safe, class: 'separator')
+        path = safe_join(b[0..-2], separator) + separator
+        b = [content_tag(:span, path.html_safe, class: ''), b[-1]]
+      end
+      safe_join b
+    end
+  end
 end

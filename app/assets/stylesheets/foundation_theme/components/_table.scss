@@ -147,7 +147,8 @@ table.list.workflows.transitions {
 
 // ** Filter table **
 
-fieldset#filters table {
+/* MODIFICATION DU STYLE POUR MIGRATION VERS VERSION 3.4 */
+/* fieldset#filters table {
 	border-bottom: 1px solid rgba(0,0,0,.2);
 	border-top: 1px solid rgba(0,0,0,.2);
 	border-left: 0px solid transparent;
@@ -166,7 +167,57 @@ fieldset#filters table {
 			}
 		}
 	}
+} */
+
+fieldset {
+	&#filters {
+		padding: 0px 1.25rem;
+		margin-bottom: 0px;
+		table {
+			border: 0px;
+			&#filters-table {
+				width: 60%;
+				float: left;
+				margin-top: 16px;
+				margin-bottom: 0px;
+				tr {
+					td {
+						padding: 5px 10px;
+						input[type="file"], input[type="checkbox"], input[type="radio"], select {
+							margin: 0px !important;
+						}
+					}
+				}
+			}
+		}
+		.add-filter {
+			max-width: 40%;
+			float: right;
+		}
+	}
+	&#options {
+		margin: 0;
+		table {
+			&.query-columns { 
+				margin: 0px;
+			}
+			tr {
+				td {
+					input[type="file"], select {
+						margin: 0px !important;
+					}
+					label.inline {
+						width: auto !important;
+					}
+				}
+			}
+		}
+	}
 }
+
+
+/* FIN MODIFICATION DU STYLE POUR MIGRATION VERS VERSION 3.4 */
+
 .controller-gantts.action-show {
 	#content {
 		table {

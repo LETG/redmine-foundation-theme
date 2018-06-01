@@ -4,3 +4,84 @@
         "components/components",
         "modules/modules",
         "fonts/fonts";
+
+/* STYLE SPECIFIQUE POUR MIGRATION VERS REDMINE 3.4 */
+.issue {
+  .attributes {
+    .attribute {
+      padding: 5px 0;
+      overflow: hidden;
+      &.progress {
+        border: 0px;
+      }
+      .label {
+        width: 50%;
+        font-weight: bold;
+        display: block;
+        float: left;
+        text-align: left;
+        background-color: transparent;
+        font-family: "Open Sans", sans-serif;
+        font-size: 100%;
+        color: black;
+      }
+      .value {
+        width: 50%;
+        display: block;
+        float: left;
+        text-align: left;
+        min-height: 24px;
+        .progress {
+          min-width: 100px;
+          margin-bottom: 0px;
+        }
+        p.percent {
+          margin-bottom: 0px;
+          line-height: 2em;
+        }
+      }
+    }
+  }
+}
+
+.files {
+  tr.file {
+    td.buttons {
+      .icon-only {
+        overflow: hidden;
+        display: block;
+        float: left;
+        width: 0;
+        padding: 0 0 0 18px !important;
+      }
+    }
+  }
+}
+
+.pagination {
+  span {
+    font-size: 12px;
+  }
+  ul.pages {
+    display: inline-block;
+    li {
+      display: inline-block;
+      margin: 0 4px;
+      font-size: 12px;
+    }
+  }
+}
+
+/* .icon-only {
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+  padding-left: 16px;
+  display: inline-block;
+  width: 0;
+  height: 16px;
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 8px;
+  vertical-align: middle;
+} */

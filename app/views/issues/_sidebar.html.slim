@@ -16,5 +16,5 @@ nav
 
 = call_hook(:view_issues_sidebar_issues_bottom)
 = call_hook(:view_issues_sidebar_planning_bottom)
-= render_sidebar_queries
+= render_sidebar_queries(TimeEntryQuery, @project)
 = call_hook(:view_issues_sidebar_queries_bottom)
