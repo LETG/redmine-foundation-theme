@@ -1,3 +1,7 @@
+.box.tabular > p {
+  overflow: inherit;
+}
+
 .controller-issues {
 	&.action-new {
 		.tabular p {

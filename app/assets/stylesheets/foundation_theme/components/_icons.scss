@@ -68,6 +68,19 @@ div.projects h3 {
   background: image-url("favselect-2.png") -2px 2px no-repeat;
 }
 
+.icon-only {
+  display: inline-block;
+  height: 18px;
+  width: 16px;
+  padding-left: 16px;
+  overflow: hidden;
+}
+
+.icon-download {
+  padding-left: 0;
+  height: 16px;
+}
+
 .icon-user {
   background: none;
   &::before {
@@ -180,7 +193,8 @@ input.autocomplete {
   background: image-url("favselect-2.png") no-repeat  0 4px;
 }
 
-a.project.root.parent.my-project, a.project.child.parent.my-project, a.project.child.leaf.my-project {
+// a.project.root.parent.my-project, a.project.child.parent.my-project, a.project.child.leaf.my-project {
+a.project.child.parent.my-project, a.project.child.leaf.my-project {
   background: none;
   padding: 0;
 }
