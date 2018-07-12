@@ -4,6 +4,11 @@ Redmine::MenuManager::MenuHelper.class_eval do
     render_menu((project && !project.new_record?) ? :project_menu : :application_menu, project, options)
   end
 
+  def display_main_menu?(project)
+    menu_name = project && !project.new_record? ? :project_menu : :application_menu
+    Redmine::MenuManager.items(menu_name).children.present?
+  end
+
   def render_menu(menu, project=nil, options={})
     links = []
     menu_items_for(menu, project) do |node|
@@ -27,16 +32,8 @@ Redmine::MenuManager::MenuHelper.class_eval do
   end
 
   def allowed_node?(node, user, project)
-    if project && user && !user.allowed_to?(node.url, project)
-      return false
-    end
-    if node.condition && !node.condition.call(project)
-      # Condition that doesn't pass
-      return false
-    end
-    if node.name == :my_page
-      return false
-    end
-    return true
+    return false if node.name == :my_page
+    raise MenuError, ":child_menus must be an array of MenuItems" unless node.is_a? Redmine::MenuManager::MenuItem
+    node.allowed?(user, project)
   end
 end
