@@ -39,7 +39,7 @@ $topbar-link-bg-active: $primary-color !default;
 $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%) !default;
 $topbar-link-font-family: $body-font-family !default;
 $topbar-link-text-transform: none !default;
-$topbar-link-padding: ($topbar-height / 3) !default;
+$topbar-link-padding: 1rem; // ($topbar-height / 3) !default;
 $topbar-back-link-size: rem-calc(18) !default;
 $topbar-link-dropdown-padding: rem-calc(20) !default;
 $topbar-button-font-size: .75rem !default;

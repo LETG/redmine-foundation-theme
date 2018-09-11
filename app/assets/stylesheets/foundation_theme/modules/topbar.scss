@@ -33,11 +33,14 @@
   }
 }
 
+.quick-search {
+  margin-right: 10px;
+}
 .jumpbox-container {
   display: none;
-  width: 300px;
-  margin: 17px 40px 0 0;
-  @media only screen and (min-width: rem-calc(1300px)) {
+  max-width: 300px;
+  margin: 17px 10px 0 0;
+  @media only screen and (min-width: rem-calc(1080px)) {
     display: block;
   }
   a.select2-choice {
@@ -47,7 +50,12 @@
     }
   }
   .select2-container {
-    width: 330px !important;
+    width: 250px !important;
+    .select2-choice {
+      span {
+        margin-right: 15px;      
+      }
+    }
   }
 }
 
